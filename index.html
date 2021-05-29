@@ -9,7 +9,100 @@
     <title>Радуга</title>
   </head>
   <body>
-    <a href="">Task1</a>
+    <h1>Task number 1 on console</h1>
+    <script>
+    function calcD(a, b, c) {
+      return b * b - 4 * a * c;
+    }
+    console.log(calcD(4, 4, 1));
+    let Min = (a, b) => (a > b ? b : a);
+    console.log("Min: ", Min(4, 2));
+    let Max = (a, b) => (a > b ? a : b);
+    console.log("Max: ", Max(2, 8));
+    let Eq = (a, b) => a === b;
+    console.log("Eq: ", Eq(2, 2));
+  </script>
+    <hr/>
+ <h1>Task number 2:</h1>
+    <h1>Резюме</h1>
+
+    <img
+      src="https://media.wired.com/photos/593261cab8eb31692072f129/master/w_2560%2Cc_limit/85120553.jpg"
+      alt="коалка ползет, перезагрузите страницу"
+      width="500"
+    />
+    <div class="info">
+      <p id="name">Аль-Вади Айман</p>
+      <input type="text" id="inText" />
+      <button type="button" id="btnName">изменить имя</button>
+      <button type="button" id="fon">изменить фон</button>
+    </div>
+
+    <br />
+
+    <div class="learn">
+      <h1>Конспект курса</h1>
+      <p class="learned-ok">Парные теги.</p>
+      <p class="learned-ok">Одиночные теги.</p>
+      <p class="learned-ok">Атрибуты тегов.</p>
+      <p class="learned-ok">Инлайновые (встроенные) стили.</p>
+      <p class="learning-in-progress">Внешние стили.</p>
+      <p class="not-learned">Стилизация по классам.</p>
+    </div>
+  </body>
+  <style>
+    body {
+      font-family: Tahoma, serif;
+      border: 2px solid brown;
+    }
+    .info {
+      text-align: center;
+    }
+    h1 {
+      color: #999999;
+      font-size: 30px;
+      text-align: center;
+    }
+    h1:hover {
+      color: darkblue;
+    }
+    .learned-ok {
+      color: green;
+      text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    }
+    .learning-in-progress {
+      color: orange;
+    }
+    .not-learned {
+      color: red;
+    }
+    .learn {
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin: auto;
+    }
+  </style>
+ <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let name = document.getElementById("name");
+      let fon = document.body;
+
+      let input = document.getElementById("inText");
+      let btnName = document.getElementById("btnName");
+      let btnFon = document.getElementById("fon");
+
+      btnName.addEventListener("click", () => {
+        console.log(input.value);
+        name.innerText = input.value;
+      });
+      btnFon.addEventListener("click", () => {
+        fon.style.backgroundColor = "Blue";
+      });
+    });
+  </script>
+<hr/>
   </body>
 
 </html>
