@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Конспект курса</h1>
+    <p class="learned-ok">Информатика.</p>
+    <p class="learned-ok">Математика.</p>
+    <p class="learned-ok">ОСПО.</p>
+    <p class="learned-ok">Английский язык.</p>
+    <p class="learning-in-progress">Data science.</p>
+    <p class="not-learned">Linux.</p>
+  </body>
+  <style>
+    body {
+      font-family: Tahoma, serif;
+    }
+    h1 {
+      color: #999999;
+    }
+    .learned-ok {
+      color: green;
+    }
+    .learning-in-progress {
+      color: orange;
+    }
+    .not-learned {
+      color: red;
+    }
+  </style>
+  <script>
+    document.getElementsByTagName("p").style = "text-decoration:line-through";
+  </script>
+</html>

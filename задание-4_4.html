@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input value="education" id="education" type="text" /> <br />
+    <br />
+    <input value="mathematic" id="mathematic" type="text" /> <br />
+    <br />
+    <input value="asu" id="asu" type="text" /> <br />
+    <br />
+    <input value="cutting" id="cutting" type="text" /> <br />
+    <br />
+    <input value="programming" id="programming" type="text" /> <br />
+    <br />
+    <input value="language" id="language" type="text" /> <br />
+    <br />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      function checking() {
+        $("#education").prop("disabled", "disabled");
+        $("#mathematic").prop("disabled", "disabled");
+
+        $("#asu").prop("disabled", "disabled");
+        $("#cutting").prop("disabled", "disabled");
+
+        $("#programming").prop("disabled", "disabled");
+        $("#language").prop("disabled", "disabled");
+      }
+      checking();
+    </script>
+  </body>
+</html>

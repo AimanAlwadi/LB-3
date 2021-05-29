@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="streat" type="text" name="streat" class="validate" />
+        <label for="streat">Streat Name</label>
+      </div>
+    </div>
+    <p>
+      <input type="checkbox" name="language" id="language" />
+      <label for="language">Знание английского языка</label>
+    </p>
+    <script>
+      var streat;
+      var streatName = document.querySelector("#streat");
+      streat = prompt("Введите Streat Name");
+      streatName.focus();
+      document.getElementById("streat").value = streat;
+      document.getElementById("language").checked = true;
+    </script>
+  </body>
+</html>
