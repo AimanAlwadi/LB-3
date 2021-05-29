@@ -103,6 +103,39 @@
     });
   </script>
 <hr/>
+<label for="education">education</label>
+    <input onclick="cliced()" type="checkbox" name="education" id="education" />
+    <label for="asu">asu</label>
+    <input onclick="cliced()" type="checkbox" name="asu" id="asu" />
+    <div id="typetext"></div>
+    <script>
+      var typetext = document.querySelector("#typetext");
+      function cliced() {
+        var check = document.querySelector("education");
+        var checkasu = document.querySelector("asu");
+        this.checked = true;
+        if (
+          document.getElementById("education").checked == true &&
+          document.getElementById("asu").checked == true
+        ) {
+          console.log("checked");
+          var text = '<p class="stroke">ВЫ НАМ ПОДОШЛИ!</p>';
+
+          typetext.innerHTML = text;
+          typetext.style.display = "block";
+        } else {
+        }
+      }
+    </script>
+<hr/>
+<p>Hello from Russia <span id="startTest">Moscow</span></p>
+    <button onclick="checking()">Hide Moscow</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      function checking() {
+        $("#startTest").hide();
+      }
+    </script>
   </body>
 
 </html>
